@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CiteScope | Research Workspace</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="auth" class="auth-wrap">
+  <div class="auth-card">
+    <div class="brand-mark">CS</div><p class="eyebrow">CITESCOPE RESEARCH WORKSPACE</p>
+    <h1 id="auth-title">Welcome back</h1><p class="muted">Investigate citation changes across scholarly versions.</p>
+    <div class="auth-tabs"><button class="tab active" id="signin-tab">Sign in</button><button class="tab" id="signup-tab">Create account</button></div>
+    <form id="auth-form"><label>Full name <input id="name" placeholder="Your name" class="hidden"></label>
+      <label>Email <input type="email" id="email" placeholder="you@example.com" required></label>
+      <label>Password <input type="password" id="password" placeholder="Enter password" required minlength="4"></label>
+      <button class="primary full" type="submit" id="auth-submit">Sign in</button>
+    </form><p class="tiny">Demo authentication only. This starter stores no real account credentials.</p>
+  </div>
+</div>
+<div id="app" class="app hidden">
+<aside class="sidebar"><div class="brand"><div class="brand-mark small">CS</div><div><b>CiteScope</b><small>RESEARCH WORKSPACE</small></div></div>
+<nav>
+<button class="nav active" data-view="dashboard">▦ <span>Dashboard</span></button>
+<button class="nav" data-view="dataset">▤ <span>Citation Dataset</span></button>
+<button class="nav" data-view="compare">⇄ <span>Comparison Analysis</span></button>
+<button class="nav" data-view="predict">◈ <span>Correction Insights</span></button>
+<button class="nav" data-view="reports">▧ <span>Reports & Export</span></button>
+<button class="nav" data-view="settings">⚙ <span>Settings</span></button>
+</nav><div class="sidebar-bottom"><div class="user-circle" id="user-initial">U</div><div class="user-meta"><b id="user-name">Researcher</b><small id="user-email">demo@example.com</small></div><button id="logout" class="logout">Log out</button></div>
+</aside>
+<main class="main"><header class="topbar"><div><p class="eyebrow">RESEARCH TOOLKIT</p><h2>Investigation of Citation Accuracy</h2></div><span class="status">● Workspace</span></header>
+<section id="content"></section></main></div>
+<script src="app.js"></script></body></html>
